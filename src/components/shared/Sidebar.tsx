@@ -1,7 +1,10 @@
 "use client";
 import Link from "next/link";
-import { FaUser, FaCog, FaHome, FaBars, FaTimes } from "react-icons/fa";
+import { FaCog, FaHome, FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
+import { MdBallot, MdDashboard, MdMessage } from "react-icons/md";
+import { SiCodeproject, SiCreatereactapp } from "react-icons/si";
+import { IoCreate } from "react-icons/io5";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +36,7 @@ const Sidebar = () => {
               href="/dashboard"
               className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
             >
-              <FaHome className="h-5 w-5" />
+              <MdDashboard className="h-5 w-5" />
               <span>Dashboard</span>
             </Link>
           </li>
@@ -42,8 +45,44 @@ const Sidebar = () => {
               href="/dashboard/user-info"
               className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
             >
-              <FaUser className="h-5 w-5" />
-              <span>User Info</span>
+              <SiCreatereactapp className="h-5 w-5" />
+              <span>Create Project</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/dashboard/user-info"
+              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+            >
+              <SiCodeproject className="h-5 w-5" />
+              <span>All Projects</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/dashboard/user-info"
+              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+            >
+              <IoCreate className="h-5 w-5" />
+              <span>Create Blog</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/dashboard/user-info"
+              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+            >
+              <MdBallot className="h-5 w-5" />
+              <span>All Blogs</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/dashboard/user-info"
+              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+            >
+              <MdMessage className="h-5 w-5" />
+              <span>View Message</span>
             </Link>
           </li>
           <li>
@@ -53,6 +92,15 @@ const Sidebar = () => {
             >
               <FaCog className="h-5 w-5" />
               <span>Settings</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/"
+              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+            >
+              <FaHome className="h-5 w-5" />
+              <span>Home</span>
             </Link>
           </li>
         </ul>
