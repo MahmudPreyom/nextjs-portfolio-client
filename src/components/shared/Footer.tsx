@@ -4,7 +4,7 @@ import { BsFacebook } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-200 pb-32 pt-14 text-center text-black mt-28">
+    <footer className="shadow-gray-800 shadow-2xl pb-32 pt-14 text-center text-black mt-28">
       <Link href="/" className="text-2xl font-semibold mb-6 inline-block">
         Abdullah Al Mahmud
       </Link>
@@ -60,7 +60,8 @@ const Footer = () => {
 
       <div className="text-sm text-gray-700">
         <h5>
-          &copy; {new Date().getFullYear()} Mahmud Preyom. All Rights Reserved.
+          &copy; {new Date().getFullYear()} Abdullah Al Mahmud. All Rights
+          Reserved.
         </h5>
       </div>
     </footer>
