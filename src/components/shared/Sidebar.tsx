@@ -5,6 +5,7 @@ import { useState } from "react";
 import { MdBallot, MdDashboard, MdMessage } from "react-icons/md";
 import { SiCodeproject, SiCreatereactapp } from "react-icons/si";
 import { IoCreate } from "react-icons/io5";
+import ThemeToggle from "./ThemeToggle";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,7 @@ const Sidebar = () => {
     <>
       {/* Mobile Toggle Button (Visible on small screens) */}
       <button
-        className="md:hidden p-3 text-gray-700 fixed top-4 left-4 z-50 bg-white rounded-full shadow-md"
+        className="md:hidden p-3 text-gray-700 dark:text-gray-300 fixed top-4 left-4 z-50 bg-white dark:bg-gray-800 rounded-full shadow-md"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? (
@@ -25,16 +26,16 @@ const Sidebar = () => {
 
       {/* Sidebar Container */}
       <div
-        className={`bg-slate-100 min-h-screen p-4 fixed md:relative top-0 -left-8 md:left-0 transition-all duration-300 
+        className={`bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 min-h-screen p-4 fixed md:relative top-0 -left-8 md:left-0 transition-all duration-300 
         ${
           isOpen ? "w-64" : "w-0 md:w-64"
-        } overflow-hidden md:overflow-visible md:block shadow-lg`}
+        } overflow-hidden md:overflow-visible md:block shadow-lg dark:shadow-gray-800`}
       >
         <ul className="space-y-4 ml-10 md:ml-0 mt-12 md:mt-0">
           <li>
             <Link
               href="/dashboard"
-              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition"
             >
               <MdDashboard className="h-5 w-5" />
               <span>Dashboard</span>
@@ -43,7 +44,7 @@ const Sidebar = () => {
           <li>
             <Link
               href="/dashboard/user-info"
-              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition"
             >
               <SiCreatereactapp className="h-5 w-5" />
               <span>Create Project</span>
@@ -52,7 +53,7 @@ const Sidebar = () => {
           <li>
             <Link
               href="/dashboard/user-info"
-              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition"
             >
               <SiCodeproject className="h-5 w-5" />
               <span>All Projects</span>
@@ -61,7 +62,7 @@ const Sidebar = () => {
           <li>
             <Link
               href="/dashboard/user-info"
-              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition"
             >
               <IoCreate className="h-5 w-5" />
               <span>Create Blog</span>
@@ -70,7 +71,7 @@ const Sidebar = () => {
           <li>
             <Link
               href="/dashboard/user-info"
-              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition"
             >
               <MdBallot className="h-5 w-5" />
               <span>All Blogs</span>
@@ -79,7 +80,7 @@ const Sidebar = () => {
           <li>
             <Link
               href="/dashboard/user-info"
-              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition"
             >
               <MdMessage className="h-5 w-5" />
               <span>View Message</span>
@@ -88,7 +89,7 @@ const Sidebar = () => {
           <li>
             <Link
               href="/dashboard/settings"
-              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition"
             >
               <FaCog className="h-5 w-5" />
               <span>Settings</span>
@@ -97,11 +98,14 @@ const Sidebar = () => {
           <li>
             <Link
               href="/"
-              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition"
             >
               <FaHome className="h-5 w-5" />
               <span>Home</span>
             </Link>
+          </li>
+          <li className="flex gap-2 items-center">
+            <ThemeToggle /> <span>Theme Change</span>
           </li>
         </ul>
       </div>

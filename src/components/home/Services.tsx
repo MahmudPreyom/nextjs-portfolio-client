@@ -33,9 +33,11 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="container mx-auto py-16 px-6">
-      <h5 className="text-center text-lg text-gray-500">What I Offer</h5>
-      <h2 className="text-center text-3xl font-bold text-black mb-10">
+    <section className="container mx-auto py-16 px-6 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+      <h5 className="text-center text-lg text-gray-500 dark:text-gray-400">
+        What I Offer
+      </h5>
+      <h2 className="text-center text-3xl font-bold text-gray-800 dark:text-white mb-10">
         Services
       </h2>
 
@@ -46,16 +48,21 @@ const Services = () => {
         {services.map((service, index) => (
           <article
             key={index}
-            className="bg-white border rounded-lg shadow-lg transition-all"
+            className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-b-lg shadow-lg transition-all overflow-hidden"
             data-aos="fade-up"
           >
-            <div className="text-white text-center py-4 shadow-md bg-blue-400 rounded-b-xl">
+            <div className="text-white text-center py-4 shadow-md bg-blue-500 dark:bg-yellow-400 rounded-b-xl">
               <h3 className="text-lg font-semibold">{service.title}</h3>
             </div>
             <ul className="mt-4 space-y-5 font-medium px-6 py-5">
               {service.features.map((feature, idx) => (
-                <li key={idx} className="flex items-start text-black">
-                  <span className="text-primary mr-2">*</span>
+                <li
+                  key={idx}
+                  className="flex items-start text-gray-800 dark:text-gray-200"
+                >
+                  <span className="text-blue-500 dark:text-yellow-400 mr-2">
+                    *
+                  </span>
                   <p>{feature}</p>
                 </li>
               ))}

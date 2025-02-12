@@ -1,0 +1,84 @@
+{
+  "blogs": [
+    {
+      "id": "1",
+      "title": "AI Transforms Development",
+      "description": "Dive into the fascinating world of quantum computing, where traditional binary bits make way for qubits, unlocking unprecedented computational power. Explore the potential applications, challenges, and the race among tech giants to achieve quantum supremacy.",
+      "publish_date": "2025-03-01",
+      "author_name": "John Doe",
+      "blog_image": "https://miro.medium.com/v2/resize:fit:1400/0*0BfJbbIMX6RI2Q7w"
+    },
+    {
+      "id": "2",
+      "title": "JavaScript Closures Explained",
+      "description": "Understand JavaScript closures and how they enable powerful patterns like encapsulation, data hiding, and callbacks. This blog simplifies closures with real-world examples and practical use cases.",
+      "publish_date": "2025-03-05",
+      "author_name": "Ayesha Khan",
+      "blog_image": "https://antondevtips.com/_next/image?url=https%3A%2F%2Fantondevtips.com%2Fmedia%2Fcovers%2Fjavascipt%2Fcover_js_closures.png&w=3840&q=100"
+    },
+    {
+      "id": "3",
+      "title": "Python Asyncio Guide",
+      "description": "Python’s Asyncio module allows developers to handle concurrent tasks efficiently. Learn how event loops, coroutines, and async functions work in real-world applications.",
+      "publish_date": "2025-03-10",
+      "author_name": "Rahul Sharma",
+      "blog_image": "https://miro.medium.com/v2/resize:fit:1200/1*pj4XJVdF4GiDdEV2vGM5Qw.jpeg"
+    },
+    {
+      "id": "4",
+      "title": "WebAssembly Future Explained",
+      "description": "WebAssembly (WASM) is revolutionizing web development by bringing near-native performance to browsers. Discover how WASM enables developers to run C, C++, and Rust code directly in web applications.",
+      "publish_date": "2025-03-15",
+      "author_name": "Sophia Lee",
+      "blog_image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1717752990309/41cabd10-8a68-4397-a9d0-202f2f52d236.jpeg"
+    },
+    {
+      "id": "5",
+      "title": "Rust Basics Explained",
+      "description": "Rust is a powerful systems programming language known for safety and performance. Learn the fundamentals of Rust, including memory safety, ownership, and concurrency.",
+      "publish_date": "2025-03-18",
+      "author_name": "David Kim",
+      "blog_image": "https://miro.medium.com/v2/resize:fit:1400/1*z5LzHeGsaqk2zO_LVwY7UQ.jpeg"
+    },
+    {
+      "id": "6",
+      "title": "Machine Learning Basics",
+      "description": "Machine learning is transforming industries, but how do these algorithms work? This blog breaks down key ML algorithms like decision trees, neural networks, and support vector machines.",
+      "publish_date": "2025-03-20",
+      "author_name": "Emily Chen",
+      "blog_image": "https://miro.medium.com/v2/resize:fit:1000/1*crDcCksYq60uoavIy0JPRw.jpeg"
+    },
+    {
+      "id": "7",
+      "title": "GraphQL API Revolution",
+      "description": "GraphQL is changing how APIs are designed by offering more flexibility and efficiency compared to REST. Learn its core concepts, benefits, and implementation strategies.",
+      "publish_date": "2025-03-22",
+      "author_name": "Mohammed Ali",
+      "blog_image": "https://miro.medium.com/v2/resize:fit:1400/1*S6c7J8u6Ofe5Cdokn5pMsg.png"
+    },
+    {
+      "id": "8",
+      "title": "Best VSCode Extensions",
+      "description": "Visual Studio Code is the most popular code editor today. Discover the top 10 VS Code extensions that enhance productivity, debugging, and code organization.",
+      "publish_date": "2025-03-25",
+      "author_name": "Jessica Brown",
+      "blog_image": "https://i.ytimg.com/vi/YjhkcvS1xKU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAXFMt6rT1Vt1oeS2wXl34jRp6_2g"
+    },
+    {
+      "id": "9",
+      "title": "Cybersecurity Best Practices",
+      "description": "Security should be a priority for every developer. Learn essential cybersecurity practices, including secure coding, encryption techniques, and common vulnerabilities to avoid.",
+      "publish_date": "2025-03-28",
+      "author_name": "Mark Robinson",
+      "blog_image": "https://jetpatch.com/wp-content/uploads/2023/10/Cybersecurity-best-practices.jpg"
+    },
+    {
+      "id": "10",
+      "title": "Docker Kubernetes Comparison",
+      "description": "Docker and Kubernetes are essential tools in modern DevOps. This blog explains their differences, use cases, and how they work together for containerized applications.",
+      "publish_date": "2025-03-30",
+      "author_name": "Olivia Martinez",
+      "blog_image": "https://www.docker.com/app/uploads/2019/10/Kubernetes-with-Docker-Enterprise.png?fit=1110%2C624&ssl=1"
+    }
+  ]
+}

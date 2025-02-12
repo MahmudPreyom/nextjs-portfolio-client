@@ -1,5 +1,6 @@
 import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Navbar";
+import Providers from "@/lib";
 
 const CommonLayout = ({
   children,
@@ -7,11 +8,13 @@ const CommonLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <div>
-      <Navbar />
-      {children}
-      <Footer />
-    </div>
+    <Providers>
+      <div>
+        <Navbar />
+        {children}
+        <Footer />
+      </div>
+    </Providers>
   );
 };
 
