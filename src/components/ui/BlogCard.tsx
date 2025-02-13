@@ -1,17 +1,19 @@
 import { Blog } from "@/types";
 import Image from "next/image";
+import Link from "next/link";
+// import { useRouter } from "next/navigation";
 import React from "react";
+import { TbListDetails } from "react-icons/tb";
 
 const BlogCard = ({ blog }: { blog: Blog }) => {
-  const handleDetails = () => {
-    // Handle the details logic (e.g., navigate to a page with detailed blog view)
-    // console.log(`View details of blog with ID: ${blog._id}`);
-  };
+  // const router = useRouter(); // Initialize router
 
-  // console.log(blog.author?.name);
+  // const handleDetails = () => {
+  //   router.push(`/blog/${blog._id}`); // Navigate to blog details page
+  // };
 
   return (
-    <div className="bg-white dark:bg-gray-700 shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 duration-300">
+    <div className="bg-white dark:bg-gray-700 shadow-md rounded-lg overflow-hidden ">
       {/* Blog Image */}
       <div className="relative w-full h-52 md:h-64 lg:h-72">
         <Image
@@ -19,7 +21,7 @@ const BlogCard = ({ blog }: { blog: Blog }) => {
           alt={blog.title || "Blog Image"}
           layout="fill"
           objectFit="cover"
-          className="rounded-t-lg"
+          className="rounded-t-lg overflow-hidden transition-transform transform hover:scale-105 duration-300"
         />
       </div>
 
@@ -28,9 +30,9 @@ const BlogCard = ({ blog }: { blog: Blog }) => {
         <h2 className="text-xl font-semibold text-gray-800 dark:text-white line-clamp-2">
           {blog.title}
         </h2>
-        <p className="text-gray-500 dark:text-gray-200 mt-2 text-sm line-clamp-3">
+        {/* <p className="text-gray-500 dark:text-gray-200 mt-2 text-sm line-clamp-3">
           {blog.description}
-        </p>
+        </p> */}
         <div className="mt-4 flex items-center justify-between text-gray-600 dark:text-gray-400 text-sm">
           <span>By {blog?.author?.name}</span>
         </div>
@@ -38,12 +40,12 @@ const BlogCard = ({ blog }: { blog: Blog }) => {
 
       {/* Details Button */}
       <div className="p-4 rounded-b-lg">
-        <button
-          onClick={handleDetails}
-          className="bg-blue-500 dark:bg-yellow-400 dark:text-slate-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+        <Link
+          href={`/blog/${blog._id}`}
+          className="bg-blue-500 dark:bg-yellow-400 dark:text-slate-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 flex items-center gap-2 w-36"
         >
-          View Details
-        </button>
+          View Details <TbListDetails />
+        </Link>
       </div>
     </div>
   );

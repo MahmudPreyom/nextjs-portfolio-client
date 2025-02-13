@@ -1,43 +1,41 @@
-import { Blog } from "@/types";
+import { Project } from "@/types";
 import Image from "next/image";
 import React from "react";
 import { GrUpdate } from "react-icons/gr";
 import { RiDeleteBinLine } from "react-icons/ri";
 
-const DashboardBlogsCard = ({ blog }: { blog: Blog }) => {
+const DashboardProjectsCard = ({ project }: { project: Project }) => {
   const handleUpdate = () => {
-    // Navigate to the update page or open a modal
-    // console.log(`Update blog with ID: ${blog._id}`);
+    console.log(`Update project with ID: ${project._id}`);
   };
 
   const handleDelete = () => {
-    // Implement delete logic (e.g., API call to delete the blog)
-    // console.log(`Delete blog with ID: ${blog._id}`);
+    console.log(`Delete project with ID: ${project._id}`);
   };
 
   return (
     <div className="bg-white dark:bg-gray-700 shadow-md rounded-lg overflow-hidden">
-      {/* Blog Image */}
+      {/* Project Image */}
       <div className="relative w-full h-52 md:h-64 lg:h-72">
         <Image
-          src={blog.blogImage}
-          alt={blog.title || "Blog Image"}
+          src={project.projectImage}
+          alt={project.title || "Project Image"}
           layout="fill"
           objectFit="cover"
           className="rounded-t-lg overflow-hidden transition-transform transform hover:scale-105 duration-300"
         />
       </div>
 
-      {/* Blog Content */}
+      {/* Project Content */}
       <div className="p-5">
         <h2 className="text-xl font-semibold text-gray-800 dark:text-white line-clamp-2">
-          {blog.title}
+          {project.title}
         </h2>
         <p className="text-gray-500 dark:text-gray-200 mt-2 text-sm line-clamp-3">
-          {blog.description}
+          {project.description}
         </p>
         <div className="mt-4 flex items-center justify-between text-gray-600 dark:text-gray-400 text-sm">
-          <span>By {blog?.author?.name}</span>
+          <span>By {project?.author?.name}</span>
         </div>
       </div>
 
@@ -60,4 +58,4 @@ const DashboardBlogsCard = ({ blog }: { blog: Blog }) => {
   );
 };
 
-export default DashboardBlogsCard;
+export default DashboardProjectsCard;

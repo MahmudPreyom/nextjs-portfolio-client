@@ -23,23 +23,7 @@ const Footer = () => {
         </li>
         <li>
           <Link
-            href="#about"
-            className="hover:text-gray-700 dark:hover:text-gray-300 transition"
-          >
-            About
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="#experience"
-            className="hover:text-gray-700 dark:hover:text-gray-300 transition"
-          >
-            Experience
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="#project"
+            href="/projects"
             className="hover:text-gray-700 dark:hover:text-gray-300 transition"
           >
             Project
@@ -47,7 +31,16 @@ const Footer = () => {
         </li>
         <li>
           <Link
-            href="#contact"
+            href="/experience"
+            className="hover:text-gray-700 dark:hover:text-gray-300 transition"
+          >
+            Experience
+          </Link>
+        </li>
+
+        <li>
+          <Link
+            href="/contact"
             className="hover:text-gray-700 dark:hover:text-gray-300 transition"
           >
             Contact

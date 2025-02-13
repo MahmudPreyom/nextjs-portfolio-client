@@ -9,11 +9,9 @@ const CommonLayout = ({
 }>) => {
   return (
     <Providers>
-      <div>
-        <Navbar />
-        {children}
-        <Footer />
-      </div>
+      <Navbar />
+      <div className="min-h-screen">{children}</div>
+      <Footer />
     </Providers>
   );
 };

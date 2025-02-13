@@ -85,30 +85,30 @@ const Project = () => {
             <h3 className="text-xl text-center font-semibold mt-4 text-gray-600 dark:text-gray-200">
               {project.title}
             </h3>
-            <div className="flex justify-evenly mt-3">
+            <div className="flex flex-wrap gap-3 justify-center mt-3">
               <Link
                 href={project.frontend}
-                className="flex items-center gap-2 px-4 py-2 text-black dark:text-white border border-gray-500 dark:border-gray-300 rounded-lg hover:bg-gray-400 dark:hover:bg-gray-600 transition w-36"
+                className="flex items-center gap-2 px-4 py-2 text-black dark:text-white border border-gray-500 dark:border-gray-300 rounded-lg hover:bg-gray-400 dark:hover:bg-gray-600 transition"
               >
                 Frontend <FaGithub />
               </Link>
               <Link
                 href={project.backend}
-                className="flex items-center gap-2 px-4 py-2 text-white bg-blue-600 dark:bg-yellow-400 dark:text-slate-700 rounded-lg hover:bg-blue-700 transition w-36"
+                className="flex items-center gap-2 px-4 py-2 text-black dark:text-white border border-gray-500 dark:border-gray-300 rounded-lg hover:bg-gray-400 dark:hover:bg-gray-600 transition"
               >
                 Backend <FaGithub />
               </Link>
-            </div>
-            <div className="flex justify-evenly mt-3">
+              {/* </div> */}
+              {/* <div className="flex justify-evenly mt-3"> */}
               <Link
                 href={project.liveDemo}
-                className="flex items-center gap-2 px-4 py-2 text-white bg-blue-600 dark:bg-yellow-400 dark:text-slate-700 rounded-lg hover:bg-blue-700 transition w-36"
+                className="flex items-center gap-2 px-4 py-2 text-black dark:text-white border border-gray-500 dark:border-gray-300 rounded-lg hover:bg-gray-400 dark:hover:bg-gray-600 transition"
               >
                 Live Demo <VscLiveShare />
               </Link>
               <button
                 onClick={() => toggleExpand(index)}
-                className="flex items-center gap-2 px-4 py-2 text-black dark:text-white border border-gray-500 dark:border-gray-300 rounded-lg hover:bg-gray-400 dark:hover:bg-gray-600 transition w-36"
+                className="flex items-center gap-2 px-4 py-2 text-black dark:text-white border border-gray-500 dark:border-gray-300 rounded-lg hover:bg-gray-400 dark:hover:bg-gray-600 transition"
               >
                 {expanded === index ? (
                   "Hide Details"

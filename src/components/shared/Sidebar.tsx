@@ -29,7 +29,7 @@ const Sidebar = () => {
         className={`bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 min-h-screen p-4 fixed md:relative top-0 -left-8 md:left-0 transition-all duration-300 
         ${
           isOpen ? "w-64" : "w-0 md:w-64"
-        } overflow-hidden md:overflow-visible md:block shadow-lg dark:shadow-gray-800`}
+        } overflow-hidden md:overflow-visible z-40 md:block shadow-lg dark:shadow-gray-800`}
       >
         <ul className="space-y-4 ml-10 md:ml-0 mt-12 md:mt-0">
           <li>
@@ -70,7 +70,7 @@ const Sidebar = () => {
           </li>
           <li>
             <Link
-              href="/dashboard/projects"
+              href="/dashboard/projects/usersprojects"
               className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition"
             >
               <SiCodeproject className="h-5 w-5" />
