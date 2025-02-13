@@ -1,4 +1,5 @@
 // import ThemeToggle from "@/components/shared/ThemeToggle";
+import Project from "@/components/home/Project";
 import AboutPage from "./about/page";
 import BannerPage from "./banner/page";
 import ExperiencePage from "./experience/page";
@@ -14,6 +15,7 @@ export default function Home() {
         <AboutPage />
         <ExperiencePage />
         <ServicesPage />
+        <Project />
       </ThemeProvider>
     </div>
   );

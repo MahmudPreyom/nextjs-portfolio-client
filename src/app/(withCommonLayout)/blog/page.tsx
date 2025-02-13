@@ -30,6 +30,7 @@ const BlogPage = () => {
             <BlogCard blog={blog} key={blog._id} />
           ))}
         </div>
+        
       </div>
     </div>
   );

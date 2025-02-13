@@ -5,8 +5,10 @@ import React from "react";
 const BlogCard = ({ blog }: { blog: Blog }) => {
   const handleDetails = () => {
     // Handle the details logic (e.g., navigate to a page with detailed blog view)
-    console.log(`View details of blog with ID: ${blog._id}`);
+    // console.log(`View details of blog with ID: ${blog._id}`);
   };
+
+  // console.log(blog.author?.name);
 
   return (
     <div className="bg-white dark:bg-gray-700 shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 duration-300">
@@ -29,9 +31,9 @@ const BlogCard = ({ blog }: { blog: Blog }) => {
         <p className="text-gray-500 dark:text-gray-200 mt-2 text-sm line-clamp-3">
           {blog.description}
         </p>
-        {/* <div className="mt-4 flex items-center justify-between text-gray-600 dark:text-gray-400 text-sm">
-          <span>By {blog?.author?.name || "Unknown"}</span>
-        </div> */}
+        <div className="mt-4 flex items-center justify-between text-gray-600 dark:text-gray-400 text-sm">
+          <span>By {blog?.author?.name}</span>
+        </div>
       </div>
 
       {/* Details Button */}

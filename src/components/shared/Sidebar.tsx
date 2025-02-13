@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { FaCog, FaHome, FaBars, FaTimes } from "react-icons/fa";
+import { FaHome, FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import { MdBallot, MdDashboard, MdMessage } from "react-icons/md";
 import { SiCodeproject, SiCreatereactapp } from "react-icons/si";
@@ -43,25 +43,7 @@ const Sidebar = () => {
           </li>
           <li>
             <Link
-              href="/dashboard/user-info"
-              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition"
-            >
-              <SiCreatereactapp className="h-5 w-5" />
-              <span>Create Project</span>
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/dashboard/user-info"
-              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition"
-            >
-              <SiCodeproject className="h-5 w-5" />
-              <span>All Projects</span>
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/dashboard/user-info"
+              href="/dashboard/blogs/create"
               className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition"
             >
               <IoCreate className="h-5 w-5" />
@@ -70,7 +52,7 @@ const Sidebar = () => {
           </li>
           <li>
             <Link
-              href="/dashboard/user-info"
+              href="/dashboard/blogs"
               className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition"
             >
               <MdBallot className="h-5 w-5" />
@@ -79,20 +61,30 @@ const Sidebar = () => {
           </li>
           <li>
             <Link
+              href="/dashboard/projects/create"
+              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition"
+            >
+              <SiCreatereactapp className="h-5 w-5" />
+              <span>Create Project</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/dashboard/projects"
+              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition"
+            >
+              <SiCodeproject className="h-5 w-5" />
+              <span>All Projects</span>
+            </Link>
+          </li>
+
+          <li>
+            <Link
               href="/dashboard/user-info"
               className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition"
             >
               <MdMessage className="h-5 w-5" />
               <span>View Message</span>
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/dashboard/settings"
-              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition"
-            >
-              <FaCog className="h-5 w-5" />
-              <span>Settings</span>
             </Link>
           </li>
           <li>

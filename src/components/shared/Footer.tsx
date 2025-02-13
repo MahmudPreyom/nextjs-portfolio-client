@@ -4,10 +4,10 @@ import { BsFacebook } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="shadow-gray-800 shadow-2xl pb-32 pt-20 text-center text-black bg-gray-100 dark:bg-yellow-500 dark:text-gray-200">
+    <footer className="shadow-gray-800 shadow-2xl pb-32 pt-20 text-center text-black bg-gray-100 dark:bg-orange-200 dark:text-gray-200">
       <Link
         href="/"
-        className="text-2xl font-semibold mb-6 inline-block text-gray-800 dark:text-white"
+        className="text-2xl font-semibold mb-6 inline-block text-gray-800 dark:text-gray-700"
       >
         Abdullah Al Mahmud
       </Link>
