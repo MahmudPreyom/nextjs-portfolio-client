@@ -52,7 +52,7 @@ const Sidebar = () => {
           </li>
           <li>
             <Link
-              href="/dashboard/blogs"
+              href="/dashboard/blogs/usersblogs"
               className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition"
             >
               <MdBallot className="h-5 w-5" />
