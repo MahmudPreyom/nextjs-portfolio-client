@@ -28,6 +28,8 @@ const About = () => {
               <Image
                 src={about}
                 alt="About Image"
+                width={0}
+                height={0}
                 className="w-full max-h-[620px]"
               />
             </motion.div>

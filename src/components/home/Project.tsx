@@ -60,7 +60,7 @@ const Project = () => {
   };
 
   return (
-    <section className="py-10 bg-white dark:bg-gray-900">
+    <section className="py-10 px-2 md:px-0 bg-white dark:bg-gray-900">
       <h5 className="text-center text-gray-400 dark:text-gray-300">
         My Recent Work
       </h5>
@@ -77,11 +77,12 @@ const Project = () => {
               <Image
                 src={project.imageSrc}
                 alt={project.title}
-                layout="fill"
-                objectFit="cover"
-                className="hover:scale-110 transition-transform duration-500"
+                width={500}
+                height={400}
+                className="w-full h-full hover:scale-110 transition-transform duration-500 object-cover"
               />
             </div>
+
             <h3 className="text-xl text-center font-semibold mt-4 text-gray-600 dark:text-gray-200">
               {project.title}
             </h3>

@@ -66,7 +66,7 @@ const Banner = () => {
                 <FaDownload className="text-lg" /> Resume
               </Link>
               <Link
-                href={""}
+                href="/contact"
                 className="btn btn-primary bg-blue-500 dark:bg-yellow-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 dark:hover:bg-yellow-600 transition duration-300 flex items-center gap-2"
               >
                 <FaHireAHelper className="text-lg" /> Hire Me

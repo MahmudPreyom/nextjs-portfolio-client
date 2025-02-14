@@ -15,13 +15,13 @@ const BlogCard = ({ blog }: { blog: Blog }) => {
   return (
     <div className="bg-white dark:bg-gray-700 shadow-md rounded-lg overflow-hidden ">
       {/* Blog Image */}
-      <div className="relative w-full h-52 md:h-64 lg:h-72">
+      <div className="relative w-full h-52 sm:h-60 md:h-72 lg:h-80 xl:h-96">
         <Image
           src={blog.blogImage}
           alt={blog.title || "Blog Image"}
-          layout="fill"
-          objectFit="cover"
-          className="rounded-t-lg overflow-hidden transition-transform transform hover:scale-105 duration-300"
+          width={800}
+          height={400}
+          className="w-full h-full rounded-t-lg overflow-hidden transition-transform transform hover:scale-105 duration-300 object-cover"
         />
       </div>
 
