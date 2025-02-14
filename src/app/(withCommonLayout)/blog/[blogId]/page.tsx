@@ -1,14 +1,17 @@
 import Image from "next/image";
 import React from "react";
 
-const BlogDetailsPage = async ({ params }: { params: { blogId: string } }) => {
-  const { blogId } = params;
+const BlogDetailsPage = async ({
+  params,
+}: {
+  params: Promise<{ blogId: string }>;
+}) => {
+  const { blogId } = await params;
   const res = await fetch(
     `http://localhost:5000/api/blogs/singleBlog/${blogId}`
   );
   const blog = await res.json();
-//   console.log(res);
-  
+  //   console.log(res);
 
   return (
     <div className="dark:bg-gray-700 h-[800px] px-4 py-40 ">

@@ -2,8 +2,12 @@ import Image from "next/image";
 
 // import React from "react";
 
-const ProjectDetailsPage = async ({ params }: { params: { projectId: string } }) => {
-  const { projectId } = params;
+const ProjectDetailsPage = async ({
+  params,
+}: {
+  params: Promise<{ projectId: string }>;
+}) => {
+  const { projectId } = await params;
   // console.log(projectId);
 
   const res = await fetch(
